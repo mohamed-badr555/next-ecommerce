@@ -11,8 +11,9 @@ const CartModel = () => {
    const {cart,removeItem,isLoading}= useCartStroe();
 
  const wixClient=useWixClient()
-console.log(cart);
-
+// console.log(cart.subtotal.amount);
+// subtotal.amount
+// let subtotal=cart.subtotal.amount;
   return (
     <div className="w-max absolute p-4 rounded-md shadow-[0_3px_10px_rgba(0,0,0,0.2)] bg-white
      top-12 right-0 flex flex-col gap-6 z-20 ">
@@ -64,7 +65,8 @@ console.log(cart);
       <div className="">
         <div className="flex  justify-between items-center font-semibold">
             <span>SubTotal</span>
-            <span>${cart.subtotal.amount}</span>
+            {/* cart.subtotal.amount || */}
+            <span>${ "50.00"}</span>
         </div>
         <p className="text-gray-500  text-sm my-2  ">Lorem ipsum kdflm lklkk ut 
         .</p>
